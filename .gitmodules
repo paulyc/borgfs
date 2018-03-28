@@ -1,0 +1,3 @@
+[submodule "dep-sha512-256"]
+	path = deps/sha512-256-impl
+	url = https://github.com/paulyc/sha512-256-impl.git
