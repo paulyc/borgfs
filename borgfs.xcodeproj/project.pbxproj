@@ -23,8 +23,27 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5F074DF6206BEAD4007A8482 /* borgfs.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = borgfs.hpp; sourceTree = "<group>"; };
 		5FA554E320630ED2007A8482 /* borgfs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = borgfs; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FA554E620630ED2007A8482 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5FA554ED20630F14007A8482 /* node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = node.hpp; sourceTree = "<group>"; };
+		5FA554EE20630F14007A8482 /* node.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = node.cpp; sourceTree = "<group>"; };
+		5FA554F0206313E5007A8482 /* rootnode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = rootnode.hpp; sourceTree = "<group>"; };
+		5FA554F1206313E5007A8482 /* rootnode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = rootnode.cpp; sourceTree = "<group>"; };
+		5FA554F320631564007A8482 /* unimatrix.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = unimatrix.hpp; sourceTree = "<group>"; };
+		5FA554F420631564007A8482 /* unimatrix.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = unimatrix.cpp; sourceTree = "<group>"; };
+		5FA554F620631704007A8482 /* exception.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = exception.hpp; sourceTree = "<group>"; };
+		5FA554F720631704007A8482 /* exception.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = exception.cpp; sourceTree = "<group>"; };
+		5FA554F920631A4F007A8482 /* subtreenode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = subtreenode.hpp; sourceTree = "<group>"; };
+		5FA554FA20631A4F007A8482 /* subtreenode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = subtreenode.cpp; sourceTree = "<group>"; };
+		5FA554FC20631A65007A8482 /* datanode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = datanode.hpp; sourceTree = "<group>"; };
+		5FA554FD20631A65007A8482 /* datanode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = datanode.cpp; sourceTree = "<group>"; };
+		5FA554FF20631A92007A8482 /* hashtree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = hashtree.hpp; sourceTree = "<group>"; };
+		5FA5550020631A92007A8482 /* hashtree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hashtree.cpp; sourceTree = "<group>"; };
+		5FA5550220631BCD007A8482 /* storage.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = storage.hpp; sourceTree = "<group>"; };
+		5FA5550320631BCD007A8482 /* storage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = storage.cpp; sourceTree = "<group>"; };
+		5FA5550520631C8C007A8482 /* localfilestorage.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = localfilestorage.hpp; sourceTree = "<group>"; };
+		5FA5550620631C8C007A8482 /* localfilestorage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = localfilestorage.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +77,25 @@
 			isa = PBXGroup;
 			children = (
 				5FA554E620630ED2007A8482 /* main.cpp */,
+				5FA554ED20630F14007A8482 /* node.hpp */,
+				5FA554EE20630F14007A8482 /* node.cpp */,
+				5FA554F0206313E5007A8482 /* rootnode.hpp */,
+				5FA554F1206313E5007A8482 /* rootnode.cpp */,
+				5FA554F320631564007A8482 /* unimatrix.hpp */,
+				5FA554F420631564007A8482 /* unimatrix.cpp */,
+				5FA554F620631704007A8482 /* exception.hpp */,
+				5FA554F720631704007A8482 /* exception.cpp */,
+				5FA554F920631A4F007A8482 /* subtreenode.hpp */,
+				5FA554FA20631A4F007A8482 /* subtreenode.cpp */,
+				5FA554FC20631A65007A8482 /* datanode.hpp */,
+				5FA554FD20631A65007A8482 /* datanode.cpp */,
+				5FA554FF20631A92007A8482 /* hashtree.hpp */,
+				5FA5550020631A92007A8482 /* hashtree.cpp */,
+				5FA5550220631BCD007A8482 /* storage.hpp */,
+				5FA5550320631BCD007A8482 /* storage.cpp */,
+				5FA5550520631C8C007A8482 /* localfilestorage.hpp */,
+				5FA5550620631C8C007A8482 /* localfilestorage.cpp */,
+				5F074DF6206BEAD4007A8482 /* borgfs.hpp */,
 			);
 			path = borgfs;
 			sourceTree = "<group>";
@@ -232,8 +270,12 @@
 		5FA554EB20630ED2007A8482 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5CXXA9F47J;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/deps/sha512-256-impl/include";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -241,8 +283,12 @@
 		5FA554EC20630ED2007A8482 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5CXXA9F47J;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/deps/sha512-256-impl/include";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
